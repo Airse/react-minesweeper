@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.game-header {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.game-header div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.game-header .game-flags-left {
+  justify-content: flex-start;
+}
+
+.game-header .game-smiley {
+  justify-content: center;
+}
+
+.game-header .game-time {
+  justify-content: flex-end;
+}
+
+.game-board {
+  border-collapse: collapse;
+}
+
+.game-cell {
+  padding: 0;
+  height: 2em;
+  width: 2em;
+  box-sizing: border-box;
+  border: 1px solid #999999;
+}
+
+.game-cell div {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.game-cell button {
+  flex: 1;
+  background-color: #cccccc;
+}
+
+.game-cell.game-cell-open div {
+  background-color: #dedede;
+  align-items: center;
+}
+
+.game-number-1 {
+  color: #0049fc;
+}
+
+.game-number-2 {
+  color: #3a7400;
+}
+
+.game-number-3 {
+  color: #e93e33;
+}
+
+.game-number-4 {
+  color: #001e79;
+}
+
+.game-number-5 {
+  color: #701913;
+}
+
+.game-number-6 {
+  color: #357879;
+}
+
+.game-number-7 {
+  color: #000000;
+}
+
+.game-number-8 {
+  color: #7b7b7b;
+}

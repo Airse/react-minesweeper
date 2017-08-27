@@ -1,0 +1,87 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/jsx-uses-react": 1,
+    "no-console": 0,
+    "no-var": "error",
+    "one-var": ["error", "never"],
+    "no-new-object": "error",
+    "no-loop-func": "error",
+    "no-iterator": "error",
+    "no-new-func": "error",
+    "prefer-rest-params": "error",
+    "quotes": ["error", "single"],
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "never"],
+    "space-in-parens": ["error", "never"],
+    "space-infix-ops": "error",
+    "padded-blocks": ["error", "never"],
+    "no-whitespace-before-property": "error",
+    "keyword-spacing": "error",
+    "space-before-blocks": ["error", "always"],
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "asyncArrow": "always",
+      "named": "ignore"
+    }],
+    "newline-per-chained-call": ["error", {
+      "ignoreChainWithDepth": 2
+    }],
+    "eol-last": ["error", "always"],
+    "no-plusplus": "error",
+    "eqeqeq": "error",
+    "no-useless-constructor": "error",
+    "arrow-spacing": "error",
+    "no-confusing-arrow": "error",
+    "prefer-spread": "error",
+    "no-param-reassign": "error",
+    "no-nested-ternary": "error",
+    "no-unneeded-ternary": "error",
+    "func-style": ["error", "expression"],
+    "brace-style": "error",
+    "no-eval": ["error", {
+      "allowIndirect": true
+    }],
+    "no-array-constructor": "error",
+    "quote-props": ["error", "as-needed"],
+    "object-shorthand": ["error", "always"],
+    "dot-notation": "error",
+    "no-duplicate-imports": ["error", {
+      "includeExports": true
+    }],
+    "prefer-const": ["error", {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": false
+    }],
+    "comma-style": ["error", "last"],
+    "comma-dangle": ["error", "always-multiline"],
+    "indent": ["error", 2, {
+      "SwitchCase": 1
+    }],
+    "camelcase": ["error", {
+      "properties": "never"
+    }],
+    "no-underscore-dangle": "error",
+    "new-cap": "error",
+    "max-len": ["error", {
+      "code": 100
+    }],
+    "spaced-comment": ["error", "always"],
+    "semi": ["error", "always"],
+    "radix": "error"
+  }
+}
