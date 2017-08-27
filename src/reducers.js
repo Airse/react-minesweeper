@@ -109,7 +109,7 @@ const bombsLeft = (state = 0, action) => {
     case ActionTypes.CREATE_GAME:
       return action.numBombs;
     case ActionTypes.FLAG_CELL: {
-      const bombsChange = (action.cell.isFlagged) ? -1 : 1;
+      const bombsChange = (action.cell.isFlagged) ? 1 : -1;
       return state + bombsChange;
     }
     default:
