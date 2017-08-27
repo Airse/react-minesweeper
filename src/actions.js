@@ -25,7 +25,6 @@ export const createGame = (numRows, numCols, numBombs) => {
   );
 
   bombPositions.forEach((position) => {
-    console.log(position);
     const row = parseInt(position / numCols, 10);
     const col = position % numCols;
     boardValues[row][col] = -1;
