@@ -1,4 +1,6 @@
 import Chance from 'chance';
+import moment from 'moment';
+
 import { getAdjacentCells } from './utils';
 
 export const ActionTypes = {
@@ -65,6 +67,7 @@ export const openCell = (cell) => {
   return {
     type: ActionTypes.OPEN_CELL,
     isBomb: cell.value === -1,
+    time: moment(),
     cell,
   };
 };
@@ -73,6 +76,7 @@ export const flagCell = (cell) => {
   return {
     type: ActionTypes.FLAG_CELL,
     isBomb: cell.value === -1,
+    time: moment(),
     cell,
   };
 };

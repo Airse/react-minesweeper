@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux';
-import moment from 'moment';
 
 import { ActionTypes } from './actions';
 import { getAdjacentCells } from './utils';
@@ -63,7 +62,7 @@ const game = (state = defaultGameState, action) => {
       } else if (state.startTime === null) {
         Object.assign(newStatus, {
           status: 'STARTED',
-          startTime: moment(),
+          startTime: action.time,
         });
       }
 
@@ -91,7 +90,7 @@ const game = (state = defaultGameState, action) => {
       if (state.startTime === null) {
         Object.assign(newStatus, {
           status: 'STARTED',
-          startTime: moment(),
+          startTime: action.time,
         });
       }
 
